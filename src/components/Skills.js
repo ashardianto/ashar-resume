@@ -93,7 +93,7 @@ const Skills = () => {
       id: 13,
       src: git,
       title: 'GIT',
-      style: 'shadow-gray-500'
+      style: 'shadow-orange-800'
     },
     {
       id: 14,
