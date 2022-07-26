@@ -10,13 +10,13 @@ function classNames(...classes) {
 const Navbar = () => {
 
   return (
-    <nav className='w-full fixed top-0 z-10 bg-white bg-opacity-70'>
+    <nav className='w-full fixed top-0 z-10 py-1 bg-darkblueish'>
       <div className='container mx-auto py-2 flex items-center justify-between'>
         <div className='flex items-center gap-2'>
           <img src={logo} className="w-8" alt='logo' />
-          <span className='text-xl font-bold'>Asshr.</span>
+          <span className='text-xl text-white font-bold'>Asshr.</span>
         </div>
-        <ul className='hidden md:flex space-x-12 font-bold text-sm'>
+        <ul className='hidden md:flex space-x-16 font-bold text-md text-white'>
           <li className='hover:text-gray-500'>
             <a href='#'>Home</a>
           </li>
@@ -27,12 +27,15 @@ const Navbar = () => {
             <a href='#'>Skills</a>
           </li>
           <li className='hover:text-gray-500'>
-            <a href='#'>Contact</a>
+            <a href='#'>Works</a>
           </li>
         </ul>
-        <svg aria-hidden="true" focusable="false" className="hidden md:block w-5 h-5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <button className='hidden md:block py-1 px-4 font-bold border-2 rounded-xl text-lg text-white bg-red hover:bg-white hover:text-red duration-300 hover:scale-110'>
+          Contact
+        </button>
+        {/* <svg aria-hidden="true" focusable="false" className="hidden md:block w-5 h-5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <path d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z" />
-        </svg>
+        </svg> */}
         <Menu as="div" className="md:hidden relative inline-block text-left">
           <div>
             <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
