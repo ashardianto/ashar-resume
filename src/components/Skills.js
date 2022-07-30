@@ -110,7 +110,7 @@ const Skills = () => {
   ]
 
   return (
-    <div name='skills' className='w-full h-screen'>
+    <div id='skills' name='skills' className='w-full h-screen sm:mt-10 lg:mt-0'>
       <div className='max-w-screen-lg mx-auto p-8 flex flex-col justify-center w-full h-full'>
         <div>
           <p className='text-5xl text-red font-bold border-b-4 inline'>Skills</p>

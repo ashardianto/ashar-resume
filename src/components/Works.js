@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import onProgess from '../images/on-progress.jpg'
+import { MdArrowForwardIos, MdArrowBackIosNew } from 'react-icons/md'
 
 const featuredMarketplace = [
   "../images/portfolio-ecomurz-home.png",
@@ -76,7 +77,7 @@ const Works = () => {
   }
 
   return (
-    <div className="max-w-screen-lg mx-auto p-8 mt-32 flex flex-col justify-center w-full h-full">
+    <div id='works' className="max-w-screen-lg mx-auto p-8 mt-32 flex flex-col justify-center w-full h-full">
       <section className="w-full">
         <div>
           <p className='text-5xl text-red font-bold border-b-4 inline'>Works</p>
@@ -85,30 +86,30 @@ const Works = () => {
 
         <div ref={slideRefMP} className='relative'>
           <div className='mt-12 text-center'>
-            <p className='text-3xl text-red font-bold border-b-4 inline'>Marketplace</p>
+            <p className='text-3xl sm:text-xl text-red font-bold border-b-4 inline'>Marketplace</p>
           </div>
           <div className='mt-6'>
-            <img className='w-5/6 h-96 m-auto' src={featuredMarketplace[currIndexMP]} alt='' />
+            <img className='w-5/6 sm:h-48 md:h-96 m-auto' src={featuredMarketplace[currIndexMP]} alt='' />
           </div>
 
           <div className='absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center'>
-            <button onClick={handlePrevMP}>Previous</button>
-            <button onClick={handleNextMP}>Next</button>
+            <button onClick={handlePrevMP}><MdArrowBackIosNew /></button>
+            <button onClick={handleNextMP}><MdArrowForwardIos /></button>
 
           </div>
         </div>
 
         <div ref={slideRefGP} className='relative'>
           <div className='mt-20 text-center'>
-            <p className='text-3xl text-red font-bold border-b-4 inline'>Online Game Page</p>
+            <p className='text-3xl sm:text-xl text-red font-bold border-b-4 inline'>Online Game Page</p>
           </div>
           <div className='mt-6'>
-            <img className='w-5/6 h-96 m-auto' src={featuredGamePage[currIndexGP]} alt='' />
+            <img className='w-5/6 sm:h-48 md:h-96 m-auto' src={featuredGamePage[currIndexGP]} alt='' />
           </div>
 
           <div className='absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center'>
-            <button onClick={handlePrevGP}>Previous</button>
-            <button onClick={handleNextGP}>Next</button>
+            <button onClick={handlePrevGP}><MdArrowBackIosNew /></button>
+            <button onClick={handleNextGP}><MdArrowForwardIos /></button>
 
           </div>
         </div>

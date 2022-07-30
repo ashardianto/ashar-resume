@@ -3,7 +3,7 @@ import headerImage from '../images/header-image.jpg'
 
 const Home = () => {
   return (
-    <div className='bg-home bg-cover sm:bg-center mt-16 flex justify-between items-center w-screen h-screen'>
+    <div id='home' className='bg-home bg-cover sm:bg-center mt-16 flex justify-between items-center w-screen h-screen'>
       <div className='flex flex-wrap md:flex-nowrap'>
         <div className='flex flex-wrap lg:ml-48 justify-center md:justify-start max-w-xl mt-0 md:my-36'>
           <h1 className='text-white font-bold text-4xl md:text-6xl md:mx-auto lg:text-7xl text-center md:text-left'>Welcome to<br /> yours truly's page.</h1>
@@ -15,7 +15,7 @@ const Home = () => {
                   <path d="M0 11C0 11 4.125 3.4375 11 3.4375C17.875 3.4375 22 11 22 11C22 11 17.875 18.5625 11 18.5625C4.125 18.5625 0 11 0 11ZM11 15.8125C12.2764 15.8125 13.5004 15.3055 14.403 14.403C15.3055 13.5004 15.8125 12.2764 15.8125 11C15.8125 9.72365 15.3055 8.49957 14.403 7.59705C13.5004 6.69453 12.2764 6.1875 11 6.1875C9.72365 6.1875 8.49957 6.69453 7.59705 7.59705C6.69453 8.49957 6.1875 9.72365 6.1875 11C6.1875 12.2764 6.69453 13.5004 7.59705 14.403C8.49957 15.3055 9.72365 15.8125 11 15.8125Z" fill="white" />
                 </svg>
               </div>
-              <span>Explore.</span>
+              <a href='#aboutme'>Explore.</a>
             </button>
           </div>
         </div>

@@ -3,8 +3,8 @@ import ProfilePicture from '../images/profile-image.png'
 
 const AboutMe = () => {
   return (
-    <div name="aboutme" className='container justify-between h-screen w-full mx-auto'>
-      <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full md:flex-row'>
+    <div id='aboutme' name="aboutme" className='container justify-between h-screen w-full mx-auto'>
+      <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full lg:flex-row'>
         <div className='py-0 sm:py-10'>
           <img src={ProfilePicture} alt='' className='lg:w-3/4 md:w-full justify-center border-4 rounded-xl' />
         </div>

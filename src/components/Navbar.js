@@ -18,16 +18,16 @@ const Navbar = () => {
         </div>
         <ul className='hidden md:flex space-x-16 font-bold text-md text-white'>
           <li className='hover:text-gray-500'>
-            <a href='#'>Home</a>
+            <a href='#home'>Home</a>
           </li>
           <li className='hover:text-gray-500'>
-            <a href='#'>About Me</a>
+            <a href='#aboutme'>About Me</a>
           </li>
           <li className='hover:text-gray-500'>
-            <a href='#'>Skills</a>
+            <a href='#skills'>Skills</a>
           </li>
           <li className='hover:text-gray-500'>
-            <a href='#'>Works</a>
+            <a href='#works'>Works</a>
           </li>
         </ul>
         <button className='hidden md:block py-1 px-4 font-bold border-2 rounded-xl text-lg text-white bg-red hover:bg-white hover:text-red duration-300 hover:scale-110'>
