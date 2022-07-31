@@ -46,7 +46,7 @@ const Navbar = () => {
           isOpen={openContact}
           ariaHideApp={false}
           onRequestClose={closeModal}
-          className='h-96'
+          className='md:h-96 sm:h-48'
         >
           <div class="flex w-full min-h-screen justify-center items-center">
             <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-red w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">
@@ -126,7 +126,7 @@ const Navbar = () => {
                 <Menu.Item>
                   {({ active }) => (
                     <a
-                      href="#profile"
+                      href="#aboutme"
                       className={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                         'block px-4 py-2 text-sm text-center'
@@ -157,9 +157,11 @@ const Navbar = () => {
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                         'block px-4 py-2 text-sm text-center'
                       )}
+                      onClick={() => setOpenContact(true)}
                     >
                       Contact
                     </a>
+
                   )}
                 </Menu.Item>
               </div>
