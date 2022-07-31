@@ -2,9 +2,9 @@ import React from 'react'
 
 const Contacts = () => {
   return (
-    <footer class="text-center bg-red text-cream container justify-between w-full mx-auto">
-      <div class="container px-6 pt-6">
-        <div class="flex justify-center mb-6">
+    <footer class="text-center bg-red text-cream justify-between w-full mx-auto">
+      <div class="px-6 pt-6">
+        <div class="flex justify-center items-center mb-6">
           <a href="https://www.facebook.com/ardianto.ashar?locale2=sw_KE" type="button" class="rounded-full border-2 border-cream text-cream leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
             <svg aria-hidden="true"
               focusable="false"
