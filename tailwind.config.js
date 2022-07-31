@@ -15,7 +15,10 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'home': "url('images/header-image.jpg')"
-      })
+      }),
+      width: {
+        '600px': '600px'
+      }
     },
   },
   plugins: [],
